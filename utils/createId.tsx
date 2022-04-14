@@ -1,5 +1,5 @@
-const createId = (uniqueNumber, description) => {
-  const shortKebabDescription = description
+const createId = (uniqueNumber: string, description: string): string => {
+  const shortKebabDescription: string = description
     .toLowerCase()
     .split(" ")
     .splice(0, 2)
