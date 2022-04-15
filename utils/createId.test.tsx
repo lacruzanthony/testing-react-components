@@ -1,4 +1,3 @@
-import expect from "expect";
 import createId from "./createId";
 
 describe("createId", () => {
