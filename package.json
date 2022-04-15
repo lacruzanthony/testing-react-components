@@ -2,17 +2,17 @@
   "name": "react-typescript",
   "version": "1.0.0",
   "description": "React and TypeScript example starter project",
-  "keywords": ["typescript", "react", "starter"],
+  "keywords": [
+    "typescript",
+    "react",
+    "starter"
+  ],
   "main": "src/index.tsx",
   "dependencies": {
-    "lodash": "4.17.21",
+    "@testing-library/react": "13.0.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-scripts": "4.0.3",
-    "test-utils": "1.1.1",
-    "@types/mocha": "9.1.0",
-    "mocha": "9.2.2",
-    "expect": "27.5.1"
+    "react-scripts": "4.0.3"
   },
   "devDependencies": {
     "@types/react": "17.0.20",
@@ -25,5 +25,10 @@
     "test": "mocha './src/**/*.test.js --env=jsdom'",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
