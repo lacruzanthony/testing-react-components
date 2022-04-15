@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import App from "./App";
 
 describe("empty", () => {
@@ -9,11 +9,11 @@ describe("empty", () => {
 
 describe("App theme", () => {
   it("should toggle the theme", () => {
-    const { container } = render(<App />);
-    console.log(container.classList);
-    fireEvent.click(screen.getByText("Change theme"));
-    console.log(container.classList);
-
-    // expect(screen.getByText("Hello CodeSandbx!").cla.color).toBe("#eee");
+    const { getByTestId } = render(<App />);
+    const toggleBtn = getByTestId("theme-button");
+    fireEvent.click(toggleBtn);
+    expect(getByTestId("app-test")).toHaveClass("dark-theme");
+    fireEvent.click(toggleBtn);
+    expect(getByTestId("app-test")).toHaveClass("light-theme");
   });
 });
